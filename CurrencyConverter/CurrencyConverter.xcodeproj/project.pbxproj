@@ -15,6 +15,10 @@
 		BBF518CB2A27602D00A5A55E /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518CA2A27602D00A5A55E /* CommonConstants.swift */; };
 		BBF518CE2A27605700A5A55E /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518CD2A27605700A5A55E /* ExchangeViewController.swift */; };
 		BBF518D22A27606E00A5A55E /* Exchange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF518D12A27606E00A5A55E /* Exchange.storyboard */; };
+		BBF518D52A27632100A5A55E /* CurrenciesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518D42A27632100A5A55E /* CurrenciesListViewController.swift */; };
+		BBF518D82A2769C600A5A55E /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518D72A2769C600A5A55E /* Currency.swift */; };
+		BBF518DC2A276A5D00A5A55E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518DB2A276A5D00A5A55E /* NetworkManager.swift */; };
+		BBF518DF2A276AFA00A5A55E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518DE2A276AFA00A5A55E /* ErrorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		BBF518CA2A27602D00A5A55E /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		BBF518CD2A27605700A5A55E /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
 		BBF518D12A27606E00A5A55E /* Exchange.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exchange.storyboard; sourceTree = "<group>"; };
+		BBF518D42A27632100A5A55E /* CurrenciesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListViewController.swift; sourceTree = "<group>"; };
+		BBF518D72A2769C600A5A55E /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		BBF518DB2A276A5D00A5A55E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BBF518DE2A276AFA00A5A55E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +91,7 @@
 		BBF518C52A275FF300A5A55E /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				BBF518CC2A27603700A5A55E /* ExchangeViewController */,
+				BBF518CC2A27603700A5A55E /* Exchange */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -91,6 +99,8 @@
 		BBF518C62A275FFD00A5A55E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BBF518DD2A276ADD00A5A55E /* Models */,
+				BBF518D92A276A4900A5A55E /* Managers */,
 				BBF518C92A27602600A5A55E /* CommonConstants */,
 			);
 			path = Common;
@@ -120,19 +130,21 @@
 			path = CommonConstants;
 			sourceTree = "<group>";
 		};
-		BBF518CC2A27603700A5A55E /* ExchangeViewController */ = {
+		BBF518CC2A27603700A5A55E /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
+				BBF518D62A2769B700A5A55E /* Model */,
 				BBF518D02A27606200A5A55E /* Storyboard */,
 				BBF518CF2A27605B00A5A55E /* Controller */,
-				BBF518CD2A27605700A5A55E /* ExchangeViewController.swift */,
 			);
-			path = ExchangeViewController;
+			path = Exchange;
 			sourceTree = "<group>";
 		};
 		BBF518CF2A27605B00A5A55E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BBF518CD2A27605700A5A55E /* ExchangeViewController.swift */,
+				BBF518D42A27632100A5A55E /* CurrenciesListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +155,38 @@
 				BBF518D12A27606E00A5A55E /* Exchange.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BBF518D62A2769B700A5A55E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBF518D72A2769C600A5A55E /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBF518D92A276A4900A5A55E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BBF518DA2A276A4C00A5A55E /* NetworkManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BBF518DA2A276A4C00A5A55E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				BBF518DB2A276A5D00A5A55E /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		BBF518DD2A276ADD00A5A55E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBF518DE2A276AFA00A5A55E /* ErrorModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF518D82A2769C600A5A55E /* Currency.swift in Sources */,
+				BBF518D52A27632100A5A55E /* CurrenciesListViewController.swift in Sources */,
 				BBF518B52A275EFA00A5A55E /* ViewController.swift in Sources */,
+				BBF518DC2A276A5D00A5A55E /* NetworkManager.swift in Sources */,
 				BBF518CE2A27605700A5A55E /* ExchangeViewController.swift in Sources */,
 				BBF518B12A275EFA00A5A55E /* AppDelegate.swift in Sources */,
+				BBF518DF2A276AFA00A5A55E /* ErrorModel.swift in Sources */,
 				BBF518CB2A27602D00A5A55E /* CommonConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
