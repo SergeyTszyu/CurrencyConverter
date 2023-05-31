@@ -8,5 +8,5 @@
 import Foundation
 
 struct CommonConstants {
-    
+    static let hostURL = ""
 }

@@ -19,6 +19,7 @@
 		BBF518D82A2769C600A5A55E /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518D72A2769C600A5A55E /* Currency.swift */; };
 		BBF518DC2A276A5D00A5A55E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518DB2A276A5D00A5A55E /* NetworkManager.swift */; };
 		BBF518DF2A276AFA00A5A55E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518DE2A276AFA00A5A55E /* ErrorModel.swift */; };
+		BBF518E12A276E9600A5A55E /* ConversionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF518E02A276E9600A5A55E /* ConversionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BBF518D72A2769C600A5A55E /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		BBF518DB2A276A5D00A5A55E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BBF518DE2A276AFA00A5A55E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		BBF518E02A276E9600A5A55E /* ConversionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF518D72A2769C600A5A55E /* Currency.swift */,
+				BBF518E02A276E9600A5A55E /* ConversionData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				BBF518DC2A276A5D00A5A55E /* NetworkManager.swift in Sources */,
 				BBF518CE2A27605700A5A55E /* ExchangeViewController.swift in Sources */,
 				BBF518B12A275EFA00A5A55E /* AppDelegate.swift in Sources */,
+				BBF518E12A276E9600A5A55E /* ConversionData.swift in Sources */,
 				BBF518DF2A276AFA00A5A55E /* ErrorModel.swift in Sources */,
 				BBF518CB2A27602D00A5A55E /* CommonConstants.swift in Sources */,
 			);
