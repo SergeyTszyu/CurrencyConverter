@@ -137,6 +137,36 @@
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
+        <!--Currencies List View Controller-->
+        <scene sceneID="wNL-pV-0iT">
+            <objects>
+                <viewController storyboardIdentifier="CurrenciesListViewController" id="aUi-HX-8JW" customClass="CurrenciesListViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="811-Bm-LbV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="plh-YJ-OgY">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zKw-os-Ip5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="plh-YJ-OgY" firstAttribute="top" secondItem="zKw-os-Ip5" secondAttribute="top" id="0nI-Zb-FvB"/>
+                            <constraint firstItem="zKw-os-Ip5" firstAttribute="bottom" secondItem="plh-YJ-OgY" secondAttribute="bottom" id="VmR-DM-yoj"/>
+                            <constraint firstItem="zKw-os-Ip5" firstAttribute="trailing" secondItem="plh-YJ-OgY" secondAttribute="trailing" id="kvy-Gt-pfj"/>
+                            <constraint firstItem="plh-YJ-OgY" firstAttribute="leading" secondItem="zKw-os-Ip5" secondAttribute="leading" id="rb9-ur-yFX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="plh-YJ-OgY" id="4Tu-Yv-5jw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhK-VE-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="5"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
